@@ -1,16 +1,41 @@
 @charset "utf-8";
 
 /* CSS Document */
-*,
-html,
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'ZCOOL KuaiLe', cursive;
-}
+
 
 body {
-    width: 960px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    background-color: rgb(235, 75, 47);
+}
+
+div.headertxt h1 {
+    text-align: center;
+}
+
+div.landing {
+    background-image: url(../images/liverpool-seats.jpg);
+    width: 100%;
+    height: 300px;
+    border: black solid 2px;
+}
+div.landing h1{
+    color: white;
+    text-align: center;
+    left: 60px;
+}
+div.landing img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+div.landing button{
+    z-index: 1;
+    left: 385px;
+    top: 450px;
+    padding: 15px;
+    text-align: center;
+    display: block; margin: 0 auto;
 }
 
 .greeting {
@@ -19,8 +44,19 @@ body {
     background-color: goldenrod;
 }
 
+.greeting h1 {
+    background-color: goldenrod;
+}
+
+/*decription*/
+div.decription p {
+    padding: 20px;
+    color: white;
+}
+
 /*button = fade-in*/
 button {
+    font-family: 'ZCOOL KuaiLe', cursive;
     border-radius: 8px;
     background-color: salmon;
     padding: 40px;
@@ -33,7 +69,7 @@ button {
 
 button:hover {
     border-radius: 8px;
-    background-color: #e5eecc;
+    background-color: goldenrod;
 }
 
 #show1 {
@@ -98,11 +134,11 @@ button:hover {
 
 #flip1:hover {
     border-radius: 8px;
-    background-color: #e5eecc;
+    background-color: goldenrod;
 }
 
 #panel1 {
-    padding: 40px;
+    padding: 20px;
     display: none;
 }
 
@@ -128,11 +164,11 @@ button:hover {
 
 #flip2:hover {
     border-radius: 8px;
-    background-color: #e5eecc;
+    background-color: goldenrod;
 }
 
 #panel2 {
-    padding: 40px;
+    padding: 20px;
     display: none;
 }
 
@@ -158,11 +194,11 @@ button:hover {
 
 #flip3:hover {
     border-radius: 8px;
-    background-color: #e5eecc;
+    background-color: goldenrod;
 }
 
 #panel3 {
-    padding: 40px;
+    padding: 20px;
     display: none;
 }
 
@@ -175,6 +211,10 @@ div.anime {
     position: absolute;
     width: 100px;
     z-index: 3;
+}
+
+div.anime {
+    margin-bottom: 50px;
 }
 
 p.goaltext {

@@ -5,97 +5,119 @@
   <meta charset="utf-8">
   <title>Java & jQuery Site</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/skeleton.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div>
-    <h1></h1>
-  </div>
-  <!--greeting-->
-  <div class="greeting">
-    <script>
-      var today = new Date();
-      var hourNow = today.getHours();
-      var greeting;
 
-      if (hourNow > 18) {
-        greeting = 'Good Evening and Welcome!';
-      } else if (hourNow > 12) {
-        greeting = 'Good Afternoon and Welcome!';
-      } else if (hourNow > 0) {
-        greeting = 'Good Morning and Welcome!';
-      } else {
-        greeting = 'Welcome!'
-      }
-      document.write('<h1>' + greeting + '</h1>');
-    </script>
+  <div class="headertxt">
+    <h1>Welcome to the Liverpool fan Website!</h1>
   </div>
 
-
-  <!--buttons fadein-->
-  <div class="fadeInSection">
-    <section class="btn">
-      <button id="show1">read more</button>
-    </section>
-    <p class="readmore1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tempora exercitationem placeat
-      molestiae voluptatibus obcaecati modi quas quod dignissimos similique accusamus nostrum, minima vero saepe.</p>
-
-    <section class="btn">
-      <button id="show2">read more</button>
-    </section>
-    <p class="readmore2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tempora exercitationem placeat
-      molestiae voluptatibus obcaecati modi quas quod dignissimos similique accusamus nostrum, minima vero saepe.</p>
-
-    <section class="btn">
-      <button id="show3">read more</button>
-    </section>
-    <p class="readmore3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tempora exercitationem placeat
-      molestiae voluptatibus obcaecati modi quas quod dignissimos similique accusamus nostrum, minima vero saepe.</p>
-  </div>
-
-  <!--slide down-->
-  <div class="slideDown">
-    <div class="slideDown1">
-      <div id="flip1">Click to slide down panel</div>
-      <div id="panel1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tempora exercitationem placeat
-        molestiae voluptatibus obcaecati modi quas quod dignissimos similique accusamus nostrum, minima vero saepe.
+  <div class="container">
+    <div class="twelve columns">
+      <!--greeting-->
+      <div class="landing">
+        <h1>Liverpool fan site</h1>
+        <button onclick="window.location.href='https://store.liverpoolfc.com/'">Liverpool.com!</button>
       </div>
-    </div>
 
-    <div class="slideDown2">
-      <div id="flip2">Click to slide down panel</div>
-      <div id="panel2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tempora exercitationem placeat
-        molestiae voluptatibus obcaecati modi quas quod dignissimos similique accusamus nostrum, minima vero saepe.
-      </div>
-    </div>
+      <div class="greeting">
+        <script>
+          var today = new Date();
+          var hourNow = today.getHours();
+          var greeting;
 
-    <div class="slideDown3">
-      <div id="flip3">Click to slide down panel</div>
-      <div id="panel3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tempora exercitationem placeat
-        molestiae voluptatibus obcaecati modi quas quod dignissimos similique accusamus nostrum, minima vero saepe.
+          if (hourNow > 18) {
+            greeting = 'Good Evening and Welcome!';
+          } else if (hourNow > 12) {
+            greeting = 'Good Afternoon and Welcome!';
+          } else if (hourNow > 0) {
+            greeting = 'Good Morning and Welcome!';
+          } else {
+            greeting = 'Welcome!'
+          }
+          document.write('<h1>' + greeting + '</h1>');
+        </script>
       </div>
+
+      <div class="decription">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, laudantium, illo quis vel animi molestiae obcaecati dolor illum doloremque consequuntur voluptatem minus, veniam similique facere eum quisquam laboriosam tempora consectetur vero neque? Porro adipisci exercitationem dolores mollitia tempora, doloremque quas in sapiente corporis quae, nulla itaque minima. Cum, eum autem. Quo quos eveniet asperiores molestias, ducimus eius! Ipsa qui totam dolorem alias maiores corporis. Blanditiis sint velit quaerat placeat voluptatem assumenda minima natus temporibus vero vel ad deleniti delectus magnam ipsum rerum ut reiciendis, ea tempore, saepe hic fugit, consequatur sunt. Suscipit dolores, numquam blanditiis minima tempore est quasi vero?</p>
+      </div>
+
+      <!--buttons fadein-->
+      <div class="fadeInSection">
+        <section class="btn">
+          <button id="show1">read more</button>
+        </section>
+        <p class="readmore1">
+          <img src="images/fifa-20-cover-champions-edition.jpg" style="width:100%; height:auto;" alt="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tempora exercitationem placeat
+          molestiae voluptatibus obcaecati modi quas quod dignissimos similique accusamus nostrum, minima vero saepe.
+        </p>
+
+        <section class="btn">
+          <button id="show2">read more</button>
+        </section>
+        <p class="readmore2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tempora exercitationem
+          placeat
+          molestiae voluptatibus obcaecati modi quas quod dignissimos similique accusamus nostrum, minima vero saepe.
+        </p>
+
+        <section class="btn">
+          <button id="show3">read more</button>
+        </section>
+        <p class="readmore3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tempora exercitationem
+          placeat
+          molestiae voluptatibus obcaecati modi quas quod dignissimos similique accusamus nostrum, minima vero saepe.
+        </p>
+      </div>
+
+      <!--slide down-->
+      <div class="slideDown">
+        <div class="slideDown1">
+          <div id="flip1">Click to slide down panel</div>
+          <div id="panel1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tempora exercitationem placeat
+            molestiae voluptatibus obcaecati modi quas quod dignissimos similique accusamus nostrum, minima vero saepe.
+          </div>
+        </div>
+
+        <div class="slideDown2">
+          <div id="flip2">Click to slide down panel</div>
+          <div id="panel2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tempora exercitationem placeat
+            molestiae voluptatibus obcaecati modi quas quod dignissimos similique accusamus nostrum, minima vero saepe.
+          </div>
+        </div>
+
+        <div class="slideDown3">
+          <div id="flip3">Click to slide down panel</div>
+          <div id="panel3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tempora exercitationem placeat
+            molestiae voluptatibus obcaecati modi quas quod dignissimos similique accusamus nostrum, minima vero saepe.
+          </div>
+        </div>
+      </div>
+
+      <!--animation-->
+      <section class="btn2">
+        <button>Click here to shoot the ball!!</button>
+      </section>
+
+      <div class="anime">
+        <img src="images/Soccerball.svg" style="width:100px;" alt="">
+      </div>
+
+      <img class="goal" src="images/soccer-goal-vector-goal-clipart-soccergoal.png" alt="">
+
+      <P class="goaltext">Goal!!!</P>
+
+      <section id="btntop">
+        <button onclick="topFunction()" id="myBtn3" title="Go to top">Top</button>
+      </section>
     </div>
   </div>
-
-  <!--animation-->
-  <section class="btn2">
-    <button>Click here to shoot the ball!!</button>
-  </section>
-
-  <div class="anime">
-    <img src="images/Soccerball.svg" style="width:100px;" alt="">
-  </div>
-
-  <img class="goal" src="images/soccer-goal-vector-goal-clipart-soccergoal.png" alt="">
-
-  <P class="goaltext">Goal!!!</P>
-
-<section id="btntop">
-  <button onclick="topFunction()" id="myBtn3" title="Go to top">Top</button>
-</section>
   <!--scripts below----------------------------------->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
