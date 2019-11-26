@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Java & jQuery Site</title>
+  <link rel="stylesheet" href="css/izmir.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +17,14 @@
   <div class="headertxt">
     <h1>Welcome to the Liverpool fan Website!</h1>
   </div>
+  
 
   <div class="container">
     <div class="twelve columns">
 
       <!--greeting-->
       <div class="landing">
-        <h1>Liverpool fan site</h1>
-        <button onclick="window.location.href='https:store.liverpoolfc.com/'">Liverpool.com! </button>
+        <h1>YOU'LL NEVER WALK ALONE</h1>
       </div>
 
       <div class="greeting">
@@ -39,11 +40,19 @@
           } else if (hourNow > 0) {
             greeting = 'Good Morning and Welcome!';
           } else {
-            greeting = 'Welcome!'
+            greeting = 'Welcome! Maybe get some sleep?'
           }
           document.write('<h1>' + greeting + '</h1>');
         </script>
       </div>
+
+      <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+      <!--display time-->
+      <div class="displayDate">
+      <p id="demo"></p>
+      <button type="button" onclick="displayDate()">Click to see Date!</button>
+    </div>
 
       <div class="decription">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, laudantium, illo quis vel animi molestiae
@@ -110,6 +119,7 @@
       <!-- Slideshow container ----------------------------------->
 
       <div class="slideshow-container">
+        <div class="slideshowtext">Below are some pictures of Anfield, home stadium of the Liverpool team.</div>
 
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
@@ -173,6 +183,9 @@
     integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
   <script src="java/JavaS.js"></script>
   <script src="/node_modules/readmore-js/readmore.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/jquery.ScrollMagic.min.js" integrity="sha256-vMplzCSo+pO4wcmz/as8FVtabF5gE9Gwqk5ER8jux3w=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 
 </html>

@@ -1,109 +1,97 @@
 @charset "utf-8";
-
 /* CSS Document */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(235, 75, 47);
+    background-image: linear-gradient(to bottom right, red, goldenrod);
 }
 
+/*top landing*/
 div.headertxt h1 {
     text-align: center;
+    color: white;
 }
 
 div.landing {
-    background-image: url(../images/liverpool-seats.jpg);
+    background-image: url(../images/liverpool-LED.jpg);
+    background-size: cover;
     width: 100%;
-    height: 300px;
+    height: 525px;
     border-radius: 15px;
+    justify-content: center;
 }
 div.landing h1{
     padding: 10px;
-    color: white;
+    font-size: 3em;
+    color: red;
+    text-decoration: underline;
     text-align: center;
     left: 60px;
-}
-div.landing img {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    margin: 0 auto;
-}
-div.landing button{
-    z-index: 1;
-    left: 385px;
-    top: 450px;
-    padding: 15px;
-    text-align: center;
-    display: block; margin: 0 auto;
-}
-
-.greeting {
-    padding: 20px;
-    text-decoration: underline;
-    background-color: goldenrod;
+    background-color: rgba(0, 0, 0, .5);
     border-radius: 15px;
 }
 
-.greeting h1 {
-    background-color: goldenrod;
+div.landing button {
+    text-size-adjust: 2em;
+    cursor: pointer;
+    z-index: 1;
+    padding: 15px;
+    text-align: center;
 }
 
-/*decription*/
+/*greeting according to time of day*/
+.greeting {
+    padding: 10px;
+    text-decoration: underline;
+    background-color: goldenrod;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.clock {
+    padding-top:20px;
+    text-align: center;
+    width: 100%;
+    color: rgb(24, 190, 141);
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+/*display time and decription*/
+div.displayDate {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
 div.decription p {
     padding: 20px;
     color: white;
 }
 
-/*button = fade-in*/
+/*Buttons*/
 button {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 8px;
     background-color: salmon;
-    padding: 40px;
+    padding: 20px;
     box-shadow: 5px 10px 8px;
 }
-
 .btn {
     padding: 20px;
 }
-
 button:hover {
     border-radius: 8px;
     background-color: goldenrod;
+    cursor: pointer;
 }
 
-#show1 {
+/*button = fade-in*/
+#show1, #show2, #show3 {
     padding: 20px;
 }
 
-.readmore1 {
-    display: none;
-    padding: 20px;
-    text-align: center;
-    background-color: #e5eecc;
-    border: solid 2px #c3c3c3;
-    border-radius: 10px;
-}
-
-#show2 {
-    padding: 20px;
-}
-
-.readmore2 {
-    display: none;
-    padding: 20px;
-    text-align: center;
-    background-color: #e5eecc;
-    border: solid 2px #c3c3c3;
-    border-radius: 10px;
-}
-
-#show3 {
-    padding: 20px;
-}
-
-.readmore3 {
+.readmore1, .readmore2, .readmore3 {
     display: none;
     padding: 20px;
     text-align: center;
@@ -113,47 +101,26 @@ button:hover {
 }
 
 /*slide down*/
-.slideDown1 {
+.slideDown1, .slideDown2, .slideDown3 {
     width: 66%;
     margin: auto;
     padding: 20px;
 }
 
-#panel1,
-#flip1 {
+#panel1, #panel2, #panel3 {
     padding: 20px;
     text-align: center;
     background-color: #e5eecc;
     border: solid 2px #c3c3c3;
     border-radius: 10px;
     box-shadow: 5px 10px 8px;
-}
-
-#flip1 {
-    background-color: salmon;
-}
-
-#flip1:hover {
-    border-radius: 8px;
-    background-color: goldenrod;
-}
-
-#panel1 {
-    padding: 20px;
     display: none;
 }
 
-.slideDown2 {
-    width: 66%;
-    margin: auto;
-    padding: 20px;
-}
-
-#panel2,
-#flip2 {
+#flip1  {
+    background-color: salmon;
     padding: 20px;
     text-align: center;
-    background-color: #e5eecc;
     border: solid 2px #c3c3c3;
     border-radius: 10px;
     box-shadow: 5px 10px 8px;
@@ -161,29 +128,8 @@ button:hover {
 
 #flip2 {
     background-color: salmon;
-}
-
-#flip2:hover {
-    border-radius: 8px;
-    background-color: goldenrod;
-}
-
-#panel2 {
-    padding: 20px;
-    display: none;
-}
-
-.slideDown3 {
-    width: 66%;
-    margin: auto;
-    padding: 20px;
-}
-
-#panel3,
-#flip3 {
     padding: 20px;
     text-align: center;
-    background-color: #e5eecc;
     border: solid 2px #c3c3c3;
     border-radius: 10px;
     box-shadow: 5px 10px 8px;
@@ -191,20 +137,28 @@ button:hover {
 
 #flip3 {
     background-color: salmon;
+    padding: 20px;
+    text-align: center;
+    border: solid 2px #c3c3c3;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px;
 }
 
-#flip3:hover {
+#flip1:hover, #flip2:hover, #flip3:hover {
     border-radius: 8px;
     background-color: goldenrod;
+    cursor: pointer;
 }
-
-#panel3 {
-    padding: 20px;
-    display: none;
-}
-
-
 /* Slideshow containe****************************** */
+.slideshowtext {
+    padding: 20px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -328,15 +282,11 @@ img.goal {
     z-index: -1;
 }
 
-
 /*top-scroll*/
 #btntop {
     padding: 20px;
     padding-top: 300px;
-    position: absolute;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
+    float: right;
     z-index: 99;
     font-size: 18px;
     border: none;
