@@ -75,10 +75,12 @@ button {
     border-radius: 8px;
     background-color: salmon;
     padding: 20px;
-    box-shadow: 5px 10px 8px;
+    box-shadow: 5px 10px 8px;    
+    width: 49%;
 }
 .btn {
     padding: 20px;
+
 }
 button:hover {
     border-radius: 8px;
@@ -284,13 +286,13 @@ img.goal {
 
 /*top-scroll*/
 #btntop {
-
     padding: 20px;
     padding-top: 300px;
-    float: right;
-    z-index: 99;
     font-size: 18px;
     border: none;
     outline: none;
     cursor: pointer;
+}
+button#myBtn3 {
+    width: 225px;
 }
