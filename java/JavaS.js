@@ -30,8 +30,10 @@ showTime();
 
 //Display Date, Time, and Timezone
 function displayDate(){
-  document.getElementById("demo").innerHTML = Date();
+  document.getElementById("timezone").innerHTML = Date();
 }
+
+
 
 //jQuery things
 $(document).ready(function () {
@@ -52,6 +54,19 @@ $(document).ready(function () {
   $("#show3").click(function () {
     $(".readmore3").fadeIn("3000");
   });
+
+ //read more button css change 2
+  // $("#show12").click(function () {
+  //   $(".readmore12").fadeIn("3000");
+  //   alert("Click OK if you are sure you wanna read some really cool facts.")
+  // });
+  // $("#show22").click(function () {
+  //   $(".readmore22").fadeIn("3000");
+  // });
+  // $("#show32").click(function () {
+  //   $(".readmore32").fadeIn("3000");
+  // });
+
   //slidedown
   $("#flip1").click(function () {
     $("#panel1").slideDown("slow");

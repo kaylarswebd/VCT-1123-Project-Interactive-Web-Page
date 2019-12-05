@@ -10,13 +10,35 @@ body {
 div.headertxt h1 {
     text-align: center;
     color: white;
+    background-color: black;
+    height: 50px;
+}
+
+/* triangles */
+div.tri {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 100px 200px;
+    border-color: transparent transparent transparent goldenrod;
+    float: left;
+}
+div.tri2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 200px 100px 0;
+    border-color: transparent goldenrod transparent transparent;
+    float: right;
 }
 
 div.landing {
     background-image: url(../images/liverpool-LED.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     width: 100%;
-    height: 525px;
+    height: 960px;
     border-radius: 15px;
     justify-content: center;
 }
@@ -67,6 +89,7 @@ div.displayDate {
 div.decription p {
     padding: 20px;
     color: white;
+    text-indent: 25px;
 }
 
 /*Buttons*/
@@ -77,9 +100,11 @@ button {
     padding: 20px;
     box-shadow: 5px 10px 8px;    
     width: 49%;
+    font-size: 1em;
 }
 .btn {
     padding: 20px;
+    font-size: 1em;
 
 }
 button:hover {
@@ -102,9 +127,25 @@ button:hover {
     border-radius: 10px;
 }
 
+/*button = fade-in2*/
+/* #show12, #show22, #show32 {
+    padding: 20px;
+    display: inline-block;
+    justify-content: right;
+}
+
+.readmore12, .readmore22, .readmore32 {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 2px #c3c3c3;
+    border-radius: 10px;
+} */
+
 /*slide down*/
 .slideDown1, .slideDown2, .slideDown3 {
-    width: 66%;
+    width: 100%;
     margin: auto;
     padding: 20px;
 }
@@ -254,6 +295,11 @@ button:hover {
   to {opacity: 1}
 }
 
+div.fieldfact {
+    color: white;
+    text-indent: 25px;
+}
+
 /*animation*************************************************/
 .btn2 {
     padding: 20px;
@@ -265,14 +311,9 @@ div.anime {
     z-index: 3;
 }
 
-div.anime {
-    margin-bottom: 50px;
-}
-
 p.goaltext {
     font-size: 5em;
     float: right;
-    padding-right: 120px;
     visibility: hidden;
     font-family: 'Permanent Marker', cursive;
 }
