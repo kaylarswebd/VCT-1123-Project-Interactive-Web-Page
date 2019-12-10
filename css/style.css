@@ -3,7 +3,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to bottom right, red, goldenrod);
+    background-image: linear-gradient(to bottom right, rgb(54, 54, 54), goldenrod);
 }
 
 /*top landing*/
@@ -33,7 +33,7 @@ div.tri2 {
 }
 
 div.landing {
-    background-image: url(../images/liverpool-LED.jpg);
+    background-image: url(../images/8279.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -45,7 +45,7 @@ div.landing {
 div.landing h1{
     padding: 10px;
     font-size: 3em;
-    color: red;
+    color: rgb(255, 255, 255);
     text-decoration: underline;
     text-align: center;
     left: 60px;
@@ -96,10 +96,10 @@ div.decription p {
 button {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 8px;
-    background-color: salmon;
+    background-color: rgb(151, 151, 151);
     padding: 20px;
     box-shadow: 5px 10px 8px;    
-    width: 49%;
+    width: 100%;
     font-size: 1em;
 }
 .btn {
@@ -127,22 +127,6 @@ button:hover {
     border-radius: 10px;
 }
 
-/*button = fade-in2*/
-/* #show12, #show22, #show32 {
-    padding: 20px;
-    display: inline-block;
-    justify-content: right;
-}
-
-.readmore12, .readmore22, .readmore32 {
-    display: none;
-    padding: 20px;
-    text-align: center;
-    background-color: #e5eecc;
-    border: solid 2px #c3c3c3;
-    border-radius: 10px;
-} */
-
 /*slide down*/
 .slideDown1, .slideDown2, .slideDown3 {
     width: 100%;
@@ -161,7 +145,7 @@ button:hover {
 }
 
 #flip1  {
-    background-color: salmon;
+    background-color: rgb(151, 151, 151);
     padding: 20px;
     text-align: center;
     border: solid 2px #c3c3c3;
@@ -170,7 +154,7 @@ button:hover {
 }
 
 #flip2 {
-    background-color: salmon;
+    background-color: rgb(151, 151, 151);
     padding: 20px;
     text-align: center;
     border: solid 2px #c3c3c3;
@@ -179,7 +163,7 @@ button:hover {
 }
 
 #flip3 {
-    background-color: salmon;
+    background-color: rgb(151, 151, 151);
     padding: 20px;
     text-align: center;
     border: solid 2px #c3c3c3;
